@@ -1,0 +1,1 @@
+fisier readme pt proiect
