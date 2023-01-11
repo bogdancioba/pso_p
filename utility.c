@@ -94,6 +94,8 @@ int cat(const char *pathname)
     return 0;
 }
 
+
+
 int main(int argc, char *argv[])
 {
     if (argc < 2)
@@ -112,6 +114,13 @@ int main(int argc, char *argv[])
             printf("%s ", argv[i]);
         }
         printf("\n");
+    }
+
+    if (strcmp(utility, "hello") == 0)
+    {
+        time_t t;   // not a primitive datatype
+        time(&t);
+        printf("\nThis program has been writeen at (date and time): %s", ctime(&t));
     }
 
     // PWD
